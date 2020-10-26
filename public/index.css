@@ -1,0 +1,67 @@
+body{
+   background:  url("./img/background.jpg") no-repeat center center/cover;
+   height: 100vh;
+  object-fit: cover;
+}
+.icon{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 2;
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+}
+
+.message-form {
+    
+    margin: 40px;
+    position: absolute;
+    bottom: 0;  
+    width: 80%;
+  }
+
+#messages{
+    position: absolute;
+    top:10px;
+    width: 80%;
+    height: 85%;
+    overflow:auto;
+    border: 2px solid white;
+    border-radius: .25rem;
+}
+
+li{
+    list-style: none;
+    margin-left: -20px;
+    width: 55%;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 1rem;
+    padding: 3px;
+    position: relative;
+}
+
+li .message-content{
+    margin-top: -0.5rem;
+
+}
+
+li .time{
+    font-size: 0.7rem;
+    color: gray;
+    position:absolute;
+    right: 0.5rem;
+    bottom: 0.3rem;
+}
+
+li.left{
+   float: left; 
+   background-color:white;
+}
+
+li.right{
+    float: right;
+    margin-right: 1rem;
+    background-color: #dcf8c6;
+}

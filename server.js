@@ -10,6 +10,7 @@ const expressServer = app.listen(PORT, ()=>{console.log(`server is listing on ${
 const io = socketio(expressServer)
 io.on("connection", (socket)=>{
     socket.on("newMessageToServer", (data)=>{
+        console.log("data: ", data)
         io.emit("messageToClients", data)
     })
 })
